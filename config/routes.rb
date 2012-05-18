@@ -1,4 +1,17 @@
 CubaStreet::Application.routes.draw do
+  
+  resources :pages
+  
+  root :to => 'pages#show', :id => '1'
+  
+  match 'home', :to => 'pages#show', :id => '1'
+  
+  match 'products', :to => 'pages#show', :id => '2'
+  
+  match 'staff', :to => 'pages#show', :id => '3'
+
+  match 'contact', :to => 'pages#show', :id => '4'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

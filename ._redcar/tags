@@ -1,8 +1,20 @@
-1337339237
+1337342645
 Application	C:/Sites/rails_projects/CubaStreet/config/application.rb	  class Application 
 ApplicationController	C:/Sites/rails_projects/CubaStreet/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Sites/rails_projects/CubaStreet/app/helpers/application_helper.rb	module ApplicationHelper
 BrowsingTest	C:/Sites/rails_projects/CubaStreet/test/performance/browsing_test.rb	class BrowsingTest 
+CreatePages	C:/Sites/rails_projects/CubaStreet/db/migrate/20120518111929_create_pages.rb	class CreatePages 
+CreateProducts	C:/Sites/rails_projects/CubaStreet/db/migrate/20120518112110_create_products.rb	class CreateProducts 
+CreateStaffs	C:/Sites/rails_projects/CubaStreet/db/migrate/20120518112242_create_staffs.rb	class CreateStaffs 
 CubaStreet	C:/Sites/rails_projects/CubaStreet/config/application.rb	module CubaStreet
+Page	C:/Sites/rails_projects/CubaStreet/app/models/page.rb	class Page 
+PagesController	C:/Sites/rails_projects/CubaStreet/app/controllers/pages_controller.rb	class PagesController 
+Product	C:/Sites/rails_projects/CubaStreet/app/models/product.rb	class Product 
+Staff	C:/Sites/rails_projects/CubaStreet/app/models/staff.rb	class Staff 
 TestCase	C:/Sites/rails_projects/CubaStreet/test/test_helper.rb	class ActiveSupport::TestCase
+change	C:/Sites/rails_projects/CubaStreet/db/migrate/20120518111929_create_pages.rb	  def change
+change	C:/Sites/rails_projects/CubaStreet/db/migrate/20120518112110_create_products.rb	  def change
+change	C:/Sites/rails_projects/CubaStreet/db/migrate/20120518112242_create_staffs.rb	  def change
+show	C:/Sites/rails_projects/CubaStreet/app/controllers/pages_controller.rb	  def show
 test_homepage	C:/Sites/rails_projects/CubaStreet/test/performance/browsing_test.rb	  def test_homepage
+vertAlign	C:/Sites/rails_projects/CubaStreet/app/assets/javascripts/front_end.js	function vertAlign(pImg)

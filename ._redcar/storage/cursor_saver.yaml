@@ -1,4 +1,9 @@
 --- 
-cursor_positions: []
-
+cursor_positions: 
+  - :path: app/assets/stylesheets/front_end.css.scss
+    :cursor_offset: 2036
+    :timestamp: 2012-05-18 23:24:35.683000 +12:00
+  - :path: app/controllers/pages_controller.rb
+    :cursor_offset: 108
+    :timestamp: 2012-05-18 23:29:10.132000 +12:00
 files_to_retain: 0
