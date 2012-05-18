@@ -1,0 +1,8 @@
+1337339237
+Application	C:/Sites/rails_projects/CubaStreet/config/application.rb	  class Application 
+ApplicationController	C:/Sites/rails_projects/CubaStreet/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	C:/Sites/rails_projects/CubaStreet/app/helpers/application_helper.rb	module ApplicationHelper
+BrowsingTest	C:/Sites/rails_projects/CubaStreet/test/performance/browsing_test.rb	class BrowsingTest 
+CubaStreet	C:/Sites/rails_projects/CubaStreet/config/application.rb	module CubaStreet
+TestCase	C:/Sites/rails_projects/CubaStreet/test/test_helper.rb	class ActiveSupport::TestCase
+test_homepage	C:/Sites/rails_projects/CubaStreet/test/performance/browsing_test.rb	  def test_homepage
