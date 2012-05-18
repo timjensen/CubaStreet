@@ -6,4 +6,31 @@ cursor_positions:
   - :path: app/controllers/pages_controller.rb
     :cursor_offset: 108
     :timestamp: 2012-05-18 23:29:10.132000 +12:00
+  - :path: Gemfile
+    :cursor_offset: 638
+    :timestamp: 2012-05-18 23:07:05.039000 +12:00
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 339
+    :timestamp: 2012-05-18 23:33:15.802000 +12:00
+  - :path: app/views/layouts/_sidenav.html.erb
+    :cursor_offset: 448
+    :timestamp: 2012-05-18 23:32:44.571000 +12:00
+  - :path: app/views/layouts/_shim.html.erb
+    :cursor_offset: 105
+    :timestamp: 2012-05-18 23:32:33.410000 +12:00
+  - :path: app/views/layouts/_front_end_top.html.erb
+    :cursor_offset: 410
+    :timestamp: 2012-05-18 23:32:23.826000 +12:00
+  - :path: app/views/layouts/_front_end_bottom.html.erb
+    :cursor_offset: 65
+    :timestamp: 2012-05-18 23:32:14.162000 +12:00
+  - :path: app/views/pages/show.html.erb
+    :cursor_offset: 81
+    :timestamp: 2012-05-18 23:30:33.986000 +12:00
+  - :path: config/routes.rb
+    :cursor_offset: 315
+    :timestamp: 2012-05-18 23:34:16.827000 +12:00
+  - :path: app/views/pages/super.html.erb
+    :cursor_offset: 14
+    :timestamp: 2012-05-19 00:40:13.466000 +12:00
 files_to_retain: 0
