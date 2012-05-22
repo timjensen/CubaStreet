@@ -1,0 +1,7 @@
+<%= render 'layouts/back_end_top' %>
+<h1><%= @page.admintitle %></h1>
+  <%= form_for(@page) do |f| %>
+   <%= f.text_area :content %><br>
+  <%= f.submit "Update Page"%>
+    <% end %>
+<%= render 'layouts/back_end_bottom' %>

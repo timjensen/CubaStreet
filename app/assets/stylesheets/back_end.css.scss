@@ -1,0 +1,131 @@
+@import "bootstrap";
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Bakery Script;
+	src: url(/assets/bakery-script.ttf);
+}
+#adminContainer{
+	margin-top:25px;
+}
+#adminWrapper {
+	margin-top: 35px;
+	width: 826px;
+	margin: auto;
+	overflow: hidden;
+}
+#adminheader h1 {
+	text-align: center;
+	color: #B47836;	
+}
+#adminheader {
+	background-color: #F0DB99;
+	color: #B47836;
+	padding: 10px;
+	width: 802px;
+	border: 2px solid #B47836;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+#adminnavbar {
+	width: 826px;
+	height: 40px;
+	background: white;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#adminnavbar a{
+  text-decoration: none;
+	color: #B47836;
+}
+#adminnavbar li {
+  text-decoration: none;
+	color: #B47836;
+  text-align: center;
+	list-style-type: none;
+	font-size: 14pt;
+  display: inline;
+}
+#adminmain a {
+  text-decoration: none;
+	color: #B47836;
+}
+#adminmain li {
+  text-decoration: none;
+	color: #B47836;
+  text-align: center;
+	list-style-type: none;
+	font-size: 14pt;
+  display: inline;
+}
+#adminmain {
+	float: left;
+	width: 826px;
+	background-color: #FFF;
+	padding-left: 10px;
+	padding-right: 10px;	
+	min-height: 650px;
+}
+#adminmain h1 {
+	font-size: 20pt;
+	color: #B47836;
+	text-align: center;
+	font-family: Bakery Script;
+}
+.AccordionTitle, .AccordionContent, .AccordionContainer
+{
+  position:relative;
+  width:800px;
+}
+.AccordionTitle
+{
+	height:20px;
+	overflow:hidden;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:15pt;
+	font-weight:bold;
+	vertical-align:middle;
+	text-align:center;
+	background-repeat:repeat-x;
+	display:table-cell;
+	background-color: #F0DB99;
+	border-bottom: dotted 1px #B47836;
+	color: #B47836;
+	-moz-user-select:none;
+}
+.AccordionContent
+{
+  height:0px;
+  overflow:auto;
+  display:none;
+  background-color: #F0DB99;
+}
+.AccordionContainer
+{
+  border-top: solid 2px #B47836;
+  border-bottom: solid 2px #B47836;
+  border-left: solid 4px #B47836;
+  border-right: solid 4px #B47836;
+  border-bottom-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.newlabel {
+  width: 200px;
+}
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}

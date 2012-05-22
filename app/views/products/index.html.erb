@@ -1,0 +1,61 @@
+<%= render 'layouts/back_end_top' %>
+<h1>Edit The Products</h1>
+<center><ul><li><%= link_to "Create New Product",    admin_procreate_path %></li><li>&nbsp|</li><li>&nbsp<%= link_to "Upload Image",    root_path %></li></ul></center><br>
+
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+<div id="AccordionContainer" class="AccordionContainer">
+  <div onclick="runAccordion(1);">
+    <div class="AccordionTitle" onselectstart="return false;">
+      Pies
+    </div>
+  </div>
+  <div id="Accordion1Content" class="AccordionContent">
+    <table>
+      <%= render @pies %>
+    </table>
+  </div>
+  <div onclick="runAccordion(2);">
+    <div class="AccordionTitle" onselectstart="return false;">
+      Breads
+    </div>
+  </div>
+  <div id="Accordion2Content" class="AccordionContent">
+   <table>
+      <%= render @breads %>
+    </table>
+  </div>
+  <div onclick="runAccordion(3);">
+    <div class="AccordionTitle" onselectstart="return false;">
+      Cakes and Sweets
+    </div>
+  </div>
+  <div id="Accordion3Content" class="AccordionContent">
+    <table>
+      <%= render @sweets %>
+    </table>
+  </div>
+  <div onclick="runAccordion(4);">
+    <div class="AccordionTitle" onselectstart="return false;">
+      Sandwichs
+    </div>
+  </div>
+  <div id="Accordion4Content" class="AccordionContent">
+  <table>
+      <%= render @sands %>
+    </table>
+  </div>
+  <div onclick="runAccordion(5);">
+    <div class="AccordionTitle" onselectstart="return false;">
+      Misc
+    </div>
+  </div>
+  <div id="Accordion5Content" class="AccordionContent">
+  <table>
+      <%= render @miscs %>
+    </table>
+  </div>
+</div>
+</div>
+<%= render 'layouts/back_end_bottom' %>

@@ -1,3 +1,15 @@
 --- 
-open_files: []
-
+open_files: 
+  - config/routes.rb
+  - app/controllers/products_controller.rb
+  - app/views/products/_product.html.erb
+  - app/views/layouts/_admin_nav.html.erb
+  - app/views/products/new.html.erb
+  - app/assets/stylesheets/back_end.css.scss
+  - app/views/products/index.html.erb
+  - app/assets/javascripts/application.js
+  - app/assets/javascripts/back_end.js
+  - app/controllers/application_controller.rb
+  - app/controllers/pages_controller.rb
+  - Gemfile
+  - app/views/layouts/application.html.erb

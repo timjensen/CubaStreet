@@ -1,17 +1,30 @@
 CubaStreet::Application.routes.draw do
   
-  resources :pages
   
   root :to => 'pages#show', :id => '1'
   
   match 'home', :to => 'pages#show', :id => '1'
   
-  match 'products', :to => 'pages#show', :id => '2'
+  match 'products', :to => 'products#super'
   
   match 'staff', :to => 'pages#show', :id => '3'
 
   match 'contact', :to => 'pages#show', :id => '4'
   
+  match 'admin/home', :to => 'pages#edit', :id => '1'
+  
+  match 'admin/contact', :to => 'pages#edit', :id => '4'
+  
+  match 'admin/products', :to => 'products#index'
+  
+  match 'admin/procreate', :to => 'products#new'
+  
+  match 'admin/proedit', :to => 'products#edit'
+  
+  match 'admin/staff', :to => 'staff#index'
+  
+  #resources :pages
+  resources :products, only: [:destroy, :edit]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
