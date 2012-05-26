@@ -1,0 +1,46 @@
+<%= render 'layouts/back_end_top' %>
+
+<h1>Update Staff Profile</h1>
+<div class="row">
+  <div class="span10"> 
+    <%= form_for(@staff) do |f| %>
+    <div class="row">
+      <div class="span5">
+        <%= f.label :name , "Staff Members Name:" %>
+        <%= f.text_field :name %>
+      </div>
+      <div class="span5">
+        <%= f.label :title , "Staff Members Title:"%>
+        <%= f.text_field :title %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <%= f.label :blurb , "Staff Bio:" %>
+        <%= f.text_area :blurb , :rows => 4 %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <div id="picpic">
+          <div id="oldinner" ><center><%= f.label "Current Image:" %>
+            <%= image_tag "staffs/#{f.object.image}"  %>
+           <%= f.label :image, f.object.image %></center>
+          </div>
+        </div>
+        <div id="listbox_pro" >
+          <%= f.text_field :image %>
+          <%= select_tag "images", options_for_select(@files), :size => 10, :id => "lbx_pro", :onchange => "ups();" %>
+        </div>
+      <div id="picpic" >
+        <div id="newinner"><center><%= f.label "New Image:" %>
+          <%= image_tag "staffs/#{f.object.image}", :id => "newpic"  %>
+          <%= f.label :image, f.object.image, :id => "newlabel" %></center>
+        </div> 
+      </div>
+    </div>
+  </div>
+    <center><%= f.submit "Update This Profile" %></center>
+    <% end %>
+  </div>
+</div>

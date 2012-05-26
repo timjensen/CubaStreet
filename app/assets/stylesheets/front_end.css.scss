@@ -1,3 +1,11 @@
+/* mixins and fonts etc */
+
+@font-face {
+	font-family: ChalkDust;
+	src: url(/assets/ChalkDust.ttf);
+}
+/* page settings */
+
 * { 
 	padding: 0;
 	margin: 0;
@@ -8,10 +16,6 @@ body {
 	background-image: url(/assets/test2.png);
 	background-repeat: no;
 	background-size: 100%;
-}
-@font-face {
-	font-family: ChalkDust;
-	src: url(/assets/ChalkDust.ttf);
 }
 #mainContainer{
 	margin-top:25px;
@@ -27,6 +31,8 @@ body {
 	border-bottom-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
+/* header */
+
 #logo {
 	width: 400px;
 	height: 150px;
@@ -48,6 +54,8 @@ body {
 	font-size: 20pt;
 	text-align: center;	
 }
+/* nav bar */
+
 #sidebar {
 	float: left;
 	width: 230px;
@@ -74,6 +82,8 @@ body {
 	list-style-type: none;
 	font-size: 14pt;
 }
+/* main */
+
 #main {
 	float: left;
 	width: 675px;
@@ -102,6 +112,61 @@ body {
 	border-bottom-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
+/* products page */
+
+#prod{
+	float: left;
+	width: 210px;
+	height: 350px;
+	margin-bottom: 10px;
+	background-color: #F0DB99;
+	margin-left: 8px;
+	margin-right: 5px;
+	border: 1px solid #B47836;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+#prod table{
+	width: 210px;
+	height: 350px;
+}
+/* staff page */
+
+#staff{
+	background-color: #F0DB99;
+	width: 630px;
+	height: 145px;
+	margin-left: 8px;
+	border: 1px solid #B47836;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+#staffpic {
+	float:left;
+	width: 150px;
+	height: 130px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#smalltab {
+	margin-top: 5px;
+	margin-left: 10px;
+	float:left;
+	width: 450px;
+}
+#blurb {
+	float:left;
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 450px;
+}
+/* footer */
+
 #footer {
 	width: 952px;
 	height: 20px;

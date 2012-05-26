@@ -1,3 +1,25 @@
 <%= render 'layouts/back_end_top' %>
 <h1>Edit The Staff members</h1>
+<center>
+  <ul>
+    <li><%= link_to "Create New Staff Profile",    admin_staffcreate_path %></li>
+    <li>&nbsp|</li><li>&nbsp<%= link_to "Upload Image",    root_path %></li>
+  </ul>
+</center><br>
+
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<table>
+  <tr>
+    <td width="140px"><h3>Staff Member</h3></td>
+    <td width="120px"><h3><center>Title</center></h3></td>
+    <td width="350px"><h3><center>Bio</center></h3></td>
+    <td width="75px"></td>
+    <td width="75px"></td>
+  </tr>
+</table>
+<br>
+<%= render @staff %>
 <%= render 'layouts/back_end_bottom' %>

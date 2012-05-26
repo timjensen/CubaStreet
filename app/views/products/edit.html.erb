@@ -1,7 +1,66 @@
 <%= render 'layouts/back_end_top' %>
-<%= form_for(@product) do |f| %>
-
-
-<%= f.submit "Update Product" %>
+<h1>Edit The Product</h1>
+<div class="row">
+  <div class="span10">
+  <%= form_for(@product) do |f| %>
+    <div class="row">
+      <div class="span5">
+        <%= f.label :pro_type, "Product Type:" %>
+        <%= f.select :pro_type, "<option>pie</option><option>sweet</option><option>bread</option><option>misc</option><option>sand</option>".html_safe, :prompt => "Select something" %>
+      </div>
+      <div class="span5">
+        <%= f.label :name, "Product Name:"%>
+        <%= f.text_field :name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span5">
+        <%= f.label :price, "Product Price:" %>
+        <%= f.text_field :price %>
+      </div>
+      <div class="span5">
+        <%= f.label :sprice, "Special Product Price:" %>
+        <%= f.text_field :sprice %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <%= f.label :discrip, "Description:" %>
+        <%= f.text_area :discrip, :rows => 4 %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <div id="picpic">
+          <div id="oldinner" ><center><%= f.label "Current Image:" %>
+            <%= image_tag "products/#{f.object.pro_image}"  %>
+           <%= f.label :pro_image, f.object.pro_image %></center>
+          </div>
+        </div>
+        <div id="listbox_pro" >
+          <%= f.text_field :pro_image, :disabled => true %>
+          <%= select_tag "images", options_for_select(@files), :size => 10, :id => "lbx_pro", :onchange => "up();" %>
+        </div>
+        <div id="picpic" >
+          <div id="newinner"><center><%= f.label "New Image:" %>
+            <%= image_tag "products/#{f.object.pro_image}", :id => "newpic"  %>
+            <%= f.label :pro_image, f.object.pro_image, :id => "newlabel" %></center>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span6">
+        <% if f.object.spec == "" %>
+        <table><tr>
+        <td><%= f.label :spec, "Would you like to place this product on special?" %></td>
+        <td><%= f.text_field :spec %></td>
+      </tr></table>
+        <% end%>
+      </div>
+    </div>
+<center><%= f.submit "Update Product" %></center>
 <% end %>
+  </div>
+</div>
 <%= render 'layouts/back_end_bottom' %>

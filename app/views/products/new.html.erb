@@ -1,31 +1,37 @@
 <%= render 'layouts/back_end_top' %>
 
-  <h1>Create A New Product</h1>
-  
-<%= form_for(@product) do |f| %>
-<table>
-  <tr>
-    <td class="span1"><%= f.label :pro_type, "Type" %></td>  
-    <td><%= f.text_field :pro_type %></td>
-  </tr>
-  <tr>
-    <td><%= f.label :name%></td>
-    <td><%= f.text_field :name %></td>
-  </tr>
-  <tr>
-  <td><%= f.label :discrip %>
-  <%= f.text_area :discrip %></td>
-  </tr>
-  <tr>
-    <td><%= f.label :price %></td>
-    <td><%= f.text_field :price %></td>
-  </tr>
-  <tr>
-  <td><%= f.label :sprice %></td>
-  <td><%= f.text_field :sprice %></td>
-  </tr>
-  <%= f.submit "Create This Product" %>
-</table>
+<h1>Create A New Product</h1>
+<div class="row">
+  <div class="span10"> 
+    <%= form_for(@product) do |f| %>
+    <div class="row">
+      <div class="span5">
+        <%= f.label :pro_type, "Product Type:" %>
+        <%= f.select :pro_type, "<option>pie</option><option>sweet</option><option>bread</option><option>misc</option><option>sand</option>".html_safe, :prompt => "Select something" %>
+      </div>
+      <div class="span5">
+        <%= f.label :name, "Product Name:"%>
+        <%= f.text_field :name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span5">
+        <%= f.label :price, "Product Price:" %>
+        <%= f.text_field :price %>
+      </div>
+      <div class="span5">
+        <%= f.label :sprice, "Special Product Price:" %>
+        <%= f.text_field :sprice %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <%= f.label :discrip, "Description:" %>
+        <%= f.text_area :discrip, :rows => 4 %>
+      </div>
+    </div>
+<center><%= f.submit "Create This Product" %></center>
 <% end %>
-
+  </div>
+</div>
 <%= render 'layouts/back_end_bottom' %>

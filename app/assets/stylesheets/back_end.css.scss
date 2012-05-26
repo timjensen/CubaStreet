@@ -1,15 +1,18 @@
 @import "bootstrap";
 
+/* mixins and fonts etc */
+
 @mixin box_sizing {
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   box-sizing: border-box;
 }
-
 @font-face {
 	font-family: Bakery Script;
 	src: url(/assets/bakery-script.ttf);
 }
+/* main */
+
 #adminContainer{
 	margin-top:25px;
 }
@@ -77,6 +80,29 @@
 	text-align: center;
 	font-family: Bakery Script;
 }
+#roundthatshit {
+	background-color: #F0DB99;
+	color: #B47836;
+	padding: 10px;
+	width: 780px;
+	border: 2px solid #B47836;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+#picpic {
+	width: 265px;
+	height: 250px;
+	float: left;
+  
+}
+#listbox_pro {
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+/* accordionbox */
+
 .AccordionTitle, .AccordionContent, .AccordionContainer
 {
   position:relative;
@@ -117,9 +143,6 @@
 	border-bottom-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
-.newlabel {
-  width: 200px;
-}
 /* miscellaneous */
 
 .debug_dump {
@@ -127,5 +150,15 @@
   float: left;
   width: 100%;
   margin-top: 45px;
+  @include box_sizing;
+}
+/* forms */
+
+input, textarea, select {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 15px;
   @include box_sizing;
 }

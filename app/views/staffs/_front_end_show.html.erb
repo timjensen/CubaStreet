@@ -1,0 +1,17 @@
+<div id="staff">
+  <div id="staffpic">
+    <%= image_tag "staffs/#{staff.image}" %>
+  </div>
+  <div id="smalltab">
+    <table style="border-collapse: collapse;">
+      <tr>
+        <td width="240px" style="padding-left: 5px; border-bottom: solid 1px #B47836;"><center><%= staff.name %></center></td>
+        <td width="280px" style="border-bottom: solid 1px #B47836;"><center><%= staff.title %></center></td>
+      </tr>
+    </table>
+  </div>
+  <div id="blurb">
+    <%= staff.blurb %>
+  </div>
+</div>
+<br>

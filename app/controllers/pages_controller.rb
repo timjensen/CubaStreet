@@ -5,7 +5,6 @@ class PagesController < ApplicationController
   end
   
   def edit
-    #debugger
     @page = Page.find(params[:id])
   end
   

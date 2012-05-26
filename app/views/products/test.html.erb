@@ -1,0 +1,9 @@
+<%= form_tag '/product/uploadprod', { :multipart => true } do %>
+    <p>
+    <%= file_field_tag 'upload[file]' %>
+    </p>
+    
+    <p>
+        <%= submit_tag "Upload" %>
+    </p>
+<% end %>

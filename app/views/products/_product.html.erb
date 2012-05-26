@@ -1,9 +1,15 @@
 <tr>
-  <td><%= product.name %></td>
-  <td><%= product.discrip %></td>
-  <td>$<%= product.price %></td>
-  <td>$<%= product.sprice %></td>
-  <td><%= link_to "Edit", edit_product_path(product.id)  %></td>
-  <td>Assign Image</td>
-  <td><%= link_to "Delete", product, method: :delete, confirm: "You sure?" %></td>
+  <td width="150px"><%= product.name %></td>
+  <td width="200px"><%= product.discrip[0..30] %>...</td>
+  <td width="75px">$<%= product.price %></td>
+  <td width="75px">$<%= product.sprice %></td>
+  <td width="55px"><%= link_to "Edit", edit_product_path(product.id)  %></td>
+  <td width="125px">
+    <% if product.spec == ""%>
+      <%= link_to "Put On Promotion", specup_product_path(product), :method => :put  %>
+    <% else %>
+      <%= link_to "Take Off Promotion", specdown_product_path(product), :method => :put  %>
+    <% end %>
+  </td>
+  <td width="75px"><%= link_to "Delete", product, method: :delete, confirm: "Are you sure you wish to delete this product?" %></td>
 </tr>

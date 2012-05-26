@@ -1,0 +1,11 @@
+<div id="roundthatshit">
+  <table>
+    <tr>
+      <td width="120px"><%= staff.name %></td>
+      <td width="140px"><center><%= staff.title %></center></td>
+      <td width="350px"><%= staff.blurb[0..30] %>...</td>
+      <td width="75px"><%= link_to "Edit", edit_staff_path(staff.id)  %></td> 
+      <td width="75px"><%= link_to "Delete", staff, method: :delete, confirm: "Are you sure you wish to delete this profile?" %></td>
+    </tr>
+</table>
+</div><br>

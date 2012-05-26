@@ -1,0 +1,26 @@
+<%= render 'layouts/back_end_top' %>
+
+<h1>Create Staff Profile</h1>
+<div class="row">
+  <div class="span10"> 
+    <%= form_for(@staff) do |f| %>
+    <div class="row">
+      <div class="span5">
+        <%= f.label :name , "Staff Members Name:" %>
+        <%= f.text_field :name %>
+      </div>
+      <div class="span5">
+        <%= f.label :title , "Staff Members Title:"%>
+        <%= f.text_field :title %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <%= f.label :blurb , "Staff Bio:" %>
+        <%= f.text_area :blurb , :rows => 4 %>
+      </div>
+    </div>
+    <center><%= f.submit "Create This Profile" %></center>
+    <% end %>
+  </div>
+</div>

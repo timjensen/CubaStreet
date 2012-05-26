@@ -52,3 +52,17 @@ function animate(lastTick, timeLeft, closingId, openingId)
   setTimeout("animate(" + curTick + "," + timeLeft + ",'"
       + closingId + "','" + openingId + "')", 33);
 }
+function up() {
+  var info = document.getElementById('lbx_pro');
+  var image = info.options[info.selectedIndex].text;
+  document.getElementById('newinner').innerHTML = 
+  '<center><label for="product_New Image:">New image:</label><img alt="'+image+'" id="newpic" src="/assets/products/'+image+'" /><label for="product_image" id="newlabel">'+image+'</label></center>'
+  document.getElementById('product_pro_image').value = image;
+}
+function ups() {
+  var info = document.getElementById('lbx_pro');
+  var image = info.options[info.selectedIndex].text;
+  document.getElementById('newinner').innerHTML = 
+  '<center><label for="staff_New Image:">New image:</label><img alt="'+image+'" id="newpic" src="/assets/staffs/'+image+'" /><label for="staff_image" id="newlabel">'+image+'</label></center>'
+  document.getElementById('staff_image').value = image;
+}
