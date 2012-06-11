@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'bootstrap-sass', '2.0.0'
 gem 'basic_active_model'
-gem 'bcrypt-ruby', '~> 3.0.1'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -32,6 +32,7 @@ gem 'jquery-rails', '2.0.1'
 
 group :production do
   gem 'pg', '0.12.2'
+  gem 'bcrypt-ruby', '~> 3.0.1'
 end
 
 # To use ActiveModel has_secure_password
