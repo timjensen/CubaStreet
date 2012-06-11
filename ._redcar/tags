@@ -1,4 +1,4 @@
-1339412480
+1339413246
 AddAdminTitleToPages	C:/Sites/rails_projects/CubaStreet/db/migrate/20120519002059_add_admin_title_to_pages.rb	class AddAdminTitleToPages 
 AddRememberTokenToUsers	C:/Sites/rails_projects/CubaStreet/db/migrate/20120528041957_add_remember_token_to_users.rb	class AddRememberTokenToUsers 
 Application	C:/Sites/rails_projects/CubaStreet/config/application.rb	  class Application 
