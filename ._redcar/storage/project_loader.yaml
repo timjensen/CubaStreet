@@ -1,8 +1,8 @@
 --- 
 open_files: 
-  - app/controllers/products_controller.rb
   - config/routes.rb
-  - app/controllers/uploads_controller.rb
-  - app/views/uploads/new.html.erb
-  - app/views/sessions/new.html.erb
   - app/controllers/sessions_controller.rb
+  - app/views/layouts/_front_end_bottom.html.erb
+  - app/views/layouts/_back_end_bottom.html.erb
+  - app/views/pages/show.html.erb
+  - app/controllers/pages_controller.rb
