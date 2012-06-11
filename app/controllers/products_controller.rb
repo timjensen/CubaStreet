@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  
+   before_filter :signed_in_user, only: [:edit, :update, :index, :new, :destroy]
   def index
     @spec = Product.where("spec != ''").first
     @pies = Product.where("pro_type = 'pie'")
@@ -64,16 +64,10 @@ class ProductsController < ApplicationController
     redirect_to admin_products_path
   end
   
-  def test
-    
-  end
-  
-  def uploadprod
-    name = params[:upload][:file].original_filename
-    directory = "app/assets/images/products"
-    path = File.join(directory, name)
-    File.open(path, "wb") { |f| f.write(params[:upload][:file].read) }
-    flash[:success] = "File uploaded"
-    redirect_to admin_products_path
-  end
+   private
+
+    def signed_in_user
+      redirect_to admin_login_path, notice: "Please sign in." unless signed_in?
+    end
+
 end

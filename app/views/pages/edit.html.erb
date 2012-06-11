@@ -3,7 +3,7 @@
 <center>
 <div class="row">  
 <div class="span10"><%= form_for(@page) do |f| %>
-<%= f.text_area :content %>
+<%= f.tinymce :content %>
 <%= f.submit "Update Page"%>
     <% end %></div></div>
 </center>

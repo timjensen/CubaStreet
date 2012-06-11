@@ -1,4 +1,5 @@
 class StaffsController < ApplicationController
+  before_filter :signed_in_user, only: [:edit, :update, :index, :new, :destroy]
   
   def new
     @staff = Staff.new
@@ -44,4 +45,8 @@ class StaffsController < ApplicationController
     flash[:success] = "Staff profile was destroyed."
     redirect_to admin_staff_path
   end
+  
+  def signed_in_user
+      redirect_to admin_login_path, notice: "Please sign in." unless signed_in?
+    end
 end

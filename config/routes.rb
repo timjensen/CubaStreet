@@ -1,5 +1,7 @@
 CubaStreet::Application.routes.draw do
   
+  get "users/new"
+
   root :to => 'pages#show', :id => '1'
   match 'home', :to => 'pages#show', :id => '1'
   match 'productpage', :to => 'products#showprod'
@@ -13,9 +15,12 @@ CubaStreet::Application.routes.draw do
   match 'admin/staff', :to => 'staffs#index'
   match 'admin/staffedit', :to => 'staffs#edit'
   match 'admin/staffcreate', :to => 'staffs#new'
-  match 'admin/proupload', :to => 'upload#new'
+  match 'admin/proupload', :to => 'uploads#new'
+  match 'admin/login', :to => 'sessions#new'
+  match 'admin/logout', :to => 'sessions#destroy', via: :delete
   
-  resources :upload, only: [:new, :create]
+  resources :sessions, only: [:new, :create, :destroy]
+  resources :uploads, only: [:new, :create]
   resources :pages, only: [:update]
   resources :staffs, only: [:destroy, :update, :edit, :create]
   resources :products, only: [:destroy, :update, :edit, :create] do

@@ -1,16 +1,8 @@
 --- 
 open_files: 
   - app/controllers/products_controller.rb
-  - app/views/products/test.html.erb
   - config/routes.rb
-  - app/views/products/index.html.erb
-  - app/views/layouts/_specboard.html.erb
-  - app/views/products/edit.html.erb
-  - app/controllers/upload_controller.rb
-  - app/views/upload/new.html.erb
-  - app/assets/javascripts/front_end.js
-  - app/assets/javascripts/back_end.js
-  - app/models/page.rb
-  - app/models/product.rb
-  - app/models/staff.rb
-  - app/models/upload.rb
+  - app/controllers/uploads_controller.rb
+  - app/views/uploads/new.html.erb
+  - app/views/sessions/new.html.erb
+  - app/controllers/sessions_controller.rb

@@ -25,9 +25,6 @@ cursor_positions:
   - :path: app/views/layouts/_back_end_bottom.html.erb
     :cursor_offset: 20
     :timestamp: 2012-05-19 17:31:25.571000 +12:00
-  - :path: app/views/layouts/_front_end_bottom.html.erb
-    :cursor_offset: 64
-    :timestamp: 2012-05-20 15:05:19.330000 +12:00
   - :path: config/locales/en.yml
     :cursor_offset: 0
     :timestamp: 2012-05-18 23:05:20.868000 +12:00
@@ -66,15 +63,9 @@ cursor_positions:
   - :path: app/assets/stylesheets/front_end.css.scss
     :cursor_offset: 2813
     :timestamp: 2012-05-23 22:00:03.160000 +12:00
-  - :path: app/views/pages/edit.html.erb
-    :cursor_offset: 240
-    :timestamp: 2012-05-22 17:32:14.768000 +12:00
   - :path: app/helpers/application_helper.rb
     :cursor_offset: 0
     :timestamp: 2012-05-18 23:05:19.025000 +12:00
-  - :path: app/views/layouts/_sidenav.html.erb
-    :cursor_offset: 282
-    :timestamp: 2012-05-24 14:45:22.029000 +12:00
   - :path: app/views/staffs/new.html.erb
     :cursor_offset: 642
     :timestamp: 2012-05-24 14:52:14.910000 +12:00
@@ -84,9 +75,6 @@ cursor_positions:
   - :path: app/views/staffs/_staff.html.erb
     :cursor_offset: 416
     :timestamp: 2012-05-24 14:46:41.076000 +12:00
-  - :path: app/views/layouts/_back_end_top.html.erb
-    :cursor_offset: 211
-    :timestamp: 2012-05-19 17:30:54.273000 +12:00
   - :path: db/migrate/20120519042440_change_column_name_from_type_in_products.rb
     :cursor_offset: 131
     :timestamp: 2012-05-19 16:26:17.270000 +12:00
@@ -98,9 +86,6 @@ cursor_positions:
   - :path: app/views/staffs/edit.html.erb
     :cursor_offset: 1076
     :timestamp: 2012-05-25 14:38:13.977000 +12:00
-  - :path: app/views/layouts/application.html.erb
-    :cursor_offset: 229
-    :timestamp: 2012-05-25 14:44:41.303000 +12:00
   - :path: app/views/staffs/index.html.erb
     :cursor_offset: 579
     :timestamp: 2012-05-24 14:57:34.780000 +12:00
@@ -112,69 +97,12 @@ cursor_positions:
     :timestamp: 2012-05-23 22:03:13.991000 +12:00
     :selection_offset: 83
     :block_selection_mode: false
-  - :path: app/controllers/staffs_controller.rb
-    :cursor_offset: 491
-    :timestamp: 2012-05-25 14:35:57.071000 +12:00
-  - :path: Gemfile
-    :cursor_offset: 257
-    :timestamp: 2012-05-21 16:56:55.382000 +12:00
-  - :path: app/controllers/application_controller.rb
-    :cursor_offset: 0
-    :timestamp: 2012-05-18 23:05:19.020000 +12:00
-  - :path: app/assets/stylesheets/back_end.css.scss
-    :cursor_offset: 1683
-    :timestamp: 2012-05-26 11:44:24.977000 +12:00
-  - :path: app/controllers/pages_controller.rb
-    :cursor_offset: 117
-    :timestamp: 2012-05-26 15:40:18.874000 +12:00
   - :path: app/views/products/_product.html.erb
     :cursor_offset: 440
     :timestamp: 2012-05-26 13:03:19.797000 +12:00
-  - :path: db/schema.rb
-    :cursor_offset: 1086
-    :timestamp: 2012-05-25 14:29:06.433000 +12:00
   - :path: db/migrate/20120518112110_create_products.rb
     :cursor_offset: 393
     :timestamp: 2012-05-19 00:02:33.546000 +12:00
-  - :path: app/views/products/new.html.erb
-    :cursor_offset: 1093
-    :timestamp: 2012-05-22 23:24:42.058000 +12:00
-    :selection_offset: 1108
-    :block_selection_mode: false
-  - :path: app/views/pages/show.html.erb
-    :cursor_offset: 0
-    :timestamp: 2012-05-19 11:40:02.601000 +12:00
-    :selection_offset: 36
-    :block_selection_mode: false
-  - :path: app/controllers/products_controller.rb
-    :cursor_offset: 1795
-    :timestamp: 2012-05-26 23:07:25.932000 +12:00
-    :selection_offset: 2075
-    :block_selection_mode: false
-  - :path: app/views/products/test.html.erb
-    :cursor_offset: 22
-    :timestamp: 2012-05-26 23:22:22.092000 +12:00
-  - :path: config/routes.rb
-    :cursor_offset: 729
-    :timestamp: 2012-05-26 23:31:02.657000 +12:00
-  - :path: app/views/products/index.html.erb
-    :cursor_offset: 228
-    :timestamp: 2012-05-26 23:09:59.457000 +12:00
-  - :path: app/views/layouts/_specboard.html.erb
-    :cursor_offset: 0
-    :timestamp: 2012-05-26 12:18:20.754000 +12:00
-  - :path: app/views/products/edit.html.erb
-    :cursor_offset: 63
-    :timestamp: 2012-05-26 13:37:12.845000 +12:00
-  - :path: app/controllers/upload_controller.rb
-    :cursor_offset: 63
-    :timestamp: 2012-05-27 00:10:28.632000 +12:00
-  - :path: app/views/upload/new.html.erb
-    :cursor_offset: 103
-    :timestamp: 2012-05-27 00:13:38.837000 +12:00
-  - :path: app/assets/javascripts/front_end.js
-    :cursor_offset: 173
-    :timestamp: 2012-05-18 23:35:21.298000 +12:00
   - :path: app/assets/javascripts/back_end.js
     :cursor_offset: 0
     :timestamp: 2012-05-25 14:44:30.199000 +12:00
@@ -183,13 +111,106 @@ cursor_positions:
     :timestamp: 2012-05-27 00:10:02.652000 +12:00
     :selection_offset: 67
     :block_selection_mode: false
-  - :path: app/models/product.rb
-    :cursor_offset: 115
-    :timestamp: 2012-05-25 14:32:27.651000 +12:00
   - :path: app/models/staff.rb
     :cursor_offset: 0
     :timestamp: 2012-05-18 23:22:42.929000 +12:00
+  - :path: app/controllers/upload_controller.rb
+    :cursor_offset: 13
+    :timestamp: 2012-05-27 13:05:16.338000 +12:00
+  - :path: app/views/upload/new.html.erb
+    :cursor_offset: 45
+    :timestamp: 2012-05-27 13:04:03.337000 +12:00
+    :selection_offset: 21
+    :block_selection_mode: false
+  - :path: app/models/product.rb
+    :cursor_offset: 115
+    :timestamp: 2012-05-25 14:32:27.651000 +12:00
+  - :path: app/views/products/edit.html.erb
+    :cursor_offset: 63
+    :timestamp: 2012-05-26 13:37:12.845000 +12:00
+  - :path: app/views/products/new.html.erb
+    :cursor_offset: 1093
+    :timestamp: 2012-05-22 23:24:42.058000 +12:00
+    :selection_offset: 1108
+    :block_selection_mode: false
+  - :path: app/views/products/test.html.erb
+    :cursor_offset: 22
+    :timestamp: 2012-05-26 23:22:22.092000 +12:00
+  - :path: app/views/products/index.html.erb
+    :cursor_offset: 228
+    :timestamp: 2012-05-26 23:09:59.457000 +12:00
   - :path: app/models/upload.rb
+    :cursor_offset: 118
+    :timestamp: 2012-05-27 13:46:58.361000 +12:00
+  - :path: app/assets/javascripts/front_end.js
+    :cursor_offset: 173
+    :timestamp: 2012-05-18 23:35:21.298000 +12:00
+  - :path: db/migrate/20120528041957_add_remember_token_to_users.rb
+    :cursor_offset: 156
+    :timestamp: 2012-05-28 16:21:01.074000 +12:00
+  - :path: db/schema.rb
     :cursor_offset: 0
-    :timestamp: 2012-05-27 00:09:29.824000 +12:00
+    :timestamp: 2012-05-28 16:21:45.682000 +12:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 100
+    :timestamp: 2012-05-28 15:56:58.523000 +12:00
+  - :path: app/views/layouts/_specboard.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-05-26 12:18:20.754000 +12:00
+  - :path: Gemfile
+    :cursor_offset: 303
+    :timestamp: 2012-05-28 16:56:09.495000 +12:00
+  - :path: app/models/user.rb
+    :cursor_offset: 256
+    :timestamp: 2012-05-28 16:24:59.871000 +12:00
+  - :path: app/assets/stylesheets/back_end.css.scss
+    :cursor_offset: 2055
+    :timestamp: 2012-05-28 17:21:51.221000 +12:00
+    :selection_offset: 2035
+    :block_selection_mode: false
+  - :path: app/views/layouts/_front_end_bottom.html.erb
+    :cursor_offset: 65
+    :timestamp: 2012-05-28 16:48:35.943000 +12:00
+  - :path: app/controllers/pages_controller.rb
+    :cursor_offset: 98
+    :timestamp: 2012-05-28 22:42:42.328000 +12:00
+  - :path: app/controllers/staffs_controller.rb
+    :cursor_offset: 1267
+    :timestamp: 2012-05-28 22:44:43.572000 +12:00
+  - :path: config/routes.rb
+    :cursor_offset: 1181
+    :timestamp: 2012-05-28 15:00:00.598000 +12:00
+  - :path: app/controllers/sessions_controller.rb
+    :cursor_offset: 309
+    :timestamp: 2012-05-31 01:26:43.735000 +12:00
+  - :path: app/controllers/products_controller.rb
+    :cursor_offset: 1107
+    :timestamp: 2012-05-28 22:41:26.153000 +12:00
+  - :path: app/views/uploads/new.html.erb
+    :cursor_offset: 64
+    :timestamp: 2012-05-27 14:15:25.122000 +12:00
+  - :path: app/helpers/sessions_helper.rb
+    :cursor_offset: 403
+    :timestamp: 2012-05-28 16:41:51.960000 +12:00
+  - :path: app/controllers/uploads_controller.rb
+    :cursor_offset: 376
+    :timestamp: 2012-05-27 14:35:39.834000 +12:00
+  - :path: app/views/pages/show.html.erb
+    :cursor_offset: 114
+    :timestamp: 2012-06-11 11:59:01.720000 +12:00
+  - :path: app/views/layouts/_sidenav.html.erb
+    :cursor_offset: 168
+    :timestamp: 2012-06-11 12:01:26.099000 +12:00
+  - :path: app/views/pages/edit.html.erb
+    :cursor_offset: 70
+    :timestamp: 2012-06-11 11:47:29.971000 +12:00
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 237
+    :timestamp: 2012-06-11 11:47:56.968000 +12:00
+  - :path: app/views/layouts/_back_end_top.html.erb
+    :cursor_offset: 211
+    :timestamp: 2012-05-19 17:30:54.273000 +12:00
+  - :path: app/views/sessions/new.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-05-28 21:04:04.337000 +12:00
 files_to_retain: 0
