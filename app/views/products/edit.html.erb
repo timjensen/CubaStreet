@@ -5,12 +5,11 @@
   <%= form_for(@product) do |f| %>
     <div class="row">
       <div class="span5">
-        <%= f.label :pro_type, "Product Type:" %>
-        <%= f.select :pro_type, "<option>pie</option><option>sweet</option><option>bread</option><option>misc</option><option>sand</option>".html_safe, :prompt => "Select something" %>
-      </div>
-      <div class="span5">
         <%= f.label :name, "Product Name:"%>
         <%= f.text_field :name %>
+      </div>
+      <div class="span5">
+        
       </div>
     </div>
     <div class="row">
@@ -38,7 +37,7 @@
           </div>
         </div>
         <div id="listbox_pro" >
-          <%= f.text_field :pro_image, :disabled => true %>
+          <%= f.text_field :pro_image, :readonly => true %>
           <%= select_tag "images", options_for_select(@files), :size => 10, :id => "lbx_pro", :onchange => "up();" %>
         </div>
         <div id="picpic" >
@@ -49,16 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="span6">
-        <% if f.object.spec == "" %>
-        <table><tr>
-        <td><%= f.label :spec, "Would you like to place this product on special?" %></td>
-        <td><%= f.text_field :spec %></td>
-      </tr></table>
-        <% end%>
-      </div>
-    </div>
+    
 <center><%= f.submit "Update Product" %></center>
 <% end %>
   </div>

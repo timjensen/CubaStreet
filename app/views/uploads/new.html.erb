@@ -1,8 +1,16 @@
+<div id="uploaddiv">
+<div class="row">
+  <div class="span5 ">
 <%= form_for @upload do |f|%>
-    <p>
-    <%= f.file_field :file , :label => "Filename" %>
-    </p>
-    <p>
-        <%= f.submit "Upload" %>
-    </p>
+<center>
+<h1>Select File For Upload</h1><br>
+
+<%= f.file_field :file , :label => "Filename" %><br>
+  
+    <%= f.submit "Upload" %>
+    
 <% end %>
+</center>
+ </div>
+</div>
+</div>
