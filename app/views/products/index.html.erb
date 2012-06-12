@@ -8,7 +8,7 @@
 </center><br>
 <center>
 <% if @spec.nil? %>
-  <label>No specail currently set</label>
+  <label>No special currently set</label>
   <% elsif @spec.spec.to_date > Date.today %>
   <label> There is currently an active specials set <%= @spec.name %></label>
   <% elsif @spec.spec.to_date < Date.today %>
