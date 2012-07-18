@@ -1,12 +1,23 @@
 --- 
 open_files: 
+  - app/assets/javascripts/application.js
   - config/routes.rb
-  - app/views/products/edit.html.erb
-  - app/controllers/products_controller.rb
-  - app/views/uploads/new.html.erb
+  - app/views/layouts/_front_end_bottom.html.erb
+  - app/controllers/sessions_controller.rb
+  - app/views/staffs/new.html.erb
   - app/views/sessions/new.html.erb
-  - app/assets/stylesheets/back_end.css.scss
+  - app/views/pages/edit.html.erb
+  - app/views/layouts/_admin_nav.html.erb
+  - app/controllers/products_controller.rb
+  - app/views/layouts/_sidenav.html.erb
+  - app/views/products/showprod.html.erb
+  - app/views/pages/show.html.erb
+  - app/views/staffs/showstaff.html.erb
   - app/views/layouts/_specboard.html.erb
-  - app/views/layouts/_front_end_top.html.erb
-  - app/controllers/uploads_controller.rb
   - app/views/products/index.html.erb
+  - app/assets/javascripts/front_end.js
+  - app/assets/javascripts/back_end.js
+  - app/views/products/edit.html.erb
+  - app/views/layouts/application.html.erb
+  - app/controllers/users_controller.rb
+  - app/controllers/pages_controller.rb
